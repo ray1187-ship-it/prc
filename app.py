@@ -17,7 +17,7 @@ def sumar():
         return jsonify ({'error': 'Falta datos para sumar'}), 400
     return jsonify ({'resultado': a + b})
 
-@app.route('/api/info', , methods=['GET'])
+@app.route('/api/info', methods=['GET'])
 def info():
     return jsonify ({
         'nombre': 'Microservicio Base - Tratamiento de Datos',
